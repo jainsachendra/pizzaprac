@@ -71,7 +71,7 @@ namespace pizzaprac
             app.UseWebSockets();
             app.UseGraphQL<PizzaOrderSchema>();
             app.UseGraphQLWebSockets<PizzaOrderSchema>();
-            app.UseGraphQLPlayground(new GraphQLPlaygroundOptions() { GraphQLEndPoint = "/PracticeArea", Path = "/ui/Playground" });
+            app.UseGraphQLPlayground(new GraphQLPlaygroundOptions() { GraphQLEndPoint = "/Graphql", Path = "/ui/Playground" });
         }
     }
 }
